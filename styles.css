@@ -1,0 +1,12 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  text-align: justify;
+}
+
+main{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
