@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre el Herpes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function navigateSection(event) {
+        event.preventDefault();
+        const target = event.target.getAttribute('href');
+        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+        window.history.replaceState(null, null, window.location.href.split('#')[0] + target);
+      }
+    </script>
+  </head>
+  <body>
+    <header class="container-fluid bg-info fixed-top text-center py-3">
+      <nav>
+        <a href="index.html" type="button" class="btn btn-primary">Home</a>
+        <a href="#que_es" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">¿Qué es?</a>
+        <a href="#sintomas" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Síntomas</a>
+        <a href="#transmision" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Transmisión</a>
+        <a href="#prevencion" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Prevención</a>
+        <a href="#tratamiento" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Tratamiento</a>
+      </nav>
+    </header>
+    <main>
+      <section id="que_es" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>¿Qué es?</h2>
+        <p>El herpes es una infección viral causada por el virus del herpes simple (VHS). Hay dos tipos principales: el VHS-1, que suele causar herpes oral, y el VHS-2, que generalmente causa herpes genital. Ambos tipos pueden afectar tanto la boca como los genitales.</p>
+      </section>
+      <section id="sintomas" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Síntomas</h2>
+        <p>Los síntomas del herpes pueden variar dependiendo del tipo de virus y la zona afectada, pero comúnmente incluyen:</p>
+        <ul>
+          <li><strong>Ampollas dolorosas:</strong> Pequeñas ampollas llenas de líquido que pueden aparecer en la boca, los genitales o el área rectal.</li>
+          <li><strong>Úlceras:</strong> Las ampollas suelen romperse y convertirse en úlceras dolorosas que pueden tardar semanas en sanar.</li>
+          <li><strong>Comezón y ardor:</strong> Sensación de picazón o ardor en el área afectada antes de la aparición de las ampollas.</li>
+          <li><strong>Fiebre y síntomas similares a la gripe:</strong> En algunos casos, pueden presentarse fiebre, dolores musculares y ganglios linfáticos inflamados.</li>
+        </ul>
+        <p>Es posible que algunas personas infectadas con el virus del herpes no experimenten síntomas o tengan síntomas leves que pasan desapercibidos.</p>
+      </section>
+      <section id="transmision" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Transmisión</h2>
+        <p>El herpes se transmite principalmente a través del contacto directo con las lesiones herpéticas, aunque también puede transmitirse incluso cuando no hay síntomas visibles. Las principales vías de transmisión incluyen:</p>
+        <ul>
+          <li><strong>Contacto sexual:</strong> El herpes genital se transmite a través de relaciones sexuales vaginales, anales u orales con una persona infectada.</li>
+          <li><strong>Contacto oral:</strong> El herpes oral se transmite a través del contacto boca a boca, como besar o compartir utensilios.</li>
+          <li><strong>Autoinoculación:</strong> Es posible transmitir el virus de una parte del cuerpo a otra, por ejemplo, al tocar una herida de herpes y luego tocar otra parte del cuerpo.</li>
+          <li><strong>Transmisión de madre a hijo:</strong> Una madre infectada puede transmitir el herpes a su bebé durante el parto.</li>
+        </ul>
+      </section>
+      <section id="prevencion" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Prevención</h2>
+        <p>Para prevenir la infección por herpes:</p>
+        <ul>
+          <li><strong>Uso de preservativos:</strong> Usar preservativos durante las relaciones sexuales puede reducir el riesgo de transmisión, aunque no elimina el riesgo por completo.</          </li>
+          <li><strong>Evitar el contacto durante los brotes:</strong> Es fundamental evitar el contacto sexual o el contacto directo con la piel cuando haya síntomas de un brote de herpes.</li>
+          <li><strong>Medicación antiviral:</strong> Las personas con herpes pueden tomar medicamentos antivirales para reducir la frecuencia de los brotes y disminuir el riesgo de transmisión a otras personas.</li>
+        </ul>
+      </section>
+      <section id="tratamiento" class="container bg-secondary text-white p-5" style="border-radius: 15px">
+        <h2>Tratamiento</h2>
+        <p>No existe una cura para el herpes, pero el tratamiento puede ayudar a manejar los síntomas y reducir la frecuencia de los brotes. Las opciones de tratamiento incluyen:</p>
+        <ul>
+          <li><strong>Antivirales:</strong> Medicamentos como aciclovir, valaciclovir y famciclovir pueden reducir la gravedad y duración de los brotes.</li>
+          <li><strong>Cuidado personal:</strong> Mantener la zona afectada limpia y seca, usar ropa interior de algodón, y evitar la fricción en el área afectada pueden ayudar a aliviar los síntomas.</li>
+          <li><strong>Terapia supresiva:</strong> Para personas con brotes frecuentes, tomar medicamentos antivirales diariamente puede reducir la frecuencia de los brotes y disminuir el riesgo de transmisión.</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 Mi Sitio. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
