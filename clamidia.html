@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre Clamidia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function navigateSection(event) {
+        event.preventDefault();
+        const target = event.target.getAttribute('href');
+        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+        // Reemplaza el estado actual para evitar añadir una entrada en el historial
+        window.history.replaceState(null, null, window.location.href.split('#')[0] + target);
+      }
+    </script>
+  </head>
+  <body>
+    <header class="container-fluid bg-info fixed-top text-center py-3">
+      <nav>
+        <a href="index.html" type="button" class="btn btn-primary">Home</a>
+        <a href="#que_es" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">¿Qué es?</a>
+        <a href="#sintomas" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Síntomas</a>
+        <a href="#transmision" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Transmisión</a>
+        <a href="#prevencion" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Prevención</a>
+        <a href="#tratamiento" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Tratamiento</a>
+      </nav>
+    </header>
+    <main>
+      <section id="que_es" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>¿Qué es?</h2>
+        <p>La clamidia es una infección de transmisión sexual (ITS) causada por la bacteria <i>Chlamydia trachomatis</i>. Es una de las ITS más comunes, especialmente entre jóvenes y adultos jóvenes. La clamidia puede afectar tanto a hombres como a mujeres y, si no se trata, puede provocar problemas de salud graves, como infertilidad en las mujeres.</p>
+      </section>
+      <section id="sintomas" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Síntomas</h2>
+        <p>Muchas personas con clamidia no presentan síntomas, lo que hace que la infección sea difícil de detectar sin pruebas específicas. Sin embargo, cuando aparecen, los síntomas pueden incluir:</p>
+        <ul>
+          <li><strong>En mujeres:</strong> Flujo vaginal anormal, dolor al orinar, dolor durante las relaciones sexuales, sangrado entre períodos o después del sexo, y dolor en la parte baja del abdomen.</li>
+          <li><strong>En hombres:</strong> Secreción del pene, dolor al orinar, dolor e inflamación en los testículos.</li>
+          <li><strong>Infección rectal:</strong> Puede causar dolor rectal, secreción o sangrado, y a veces síntomas leves o inexistentes.</li>
+        </ul>
+      </section>
+      <section id="transmision" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Transmisión</h2>
+        <p>La clamidia se transmite principalmente a través del contacto sexual vaginal, anal u oral sin protección con una persona infectada. También puede transmitirse de madre a hijo durante el parto, lo que puede causar infecciones oculares o neumonía en el recién nacido.</p>
+      </section>
+      <section id="prevencion" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Prevención</h2>
+        <p>Para prevenir la clamidia, es fundamental seguir estas prácticas:</p>
+        <ul>
+          <li><strong>Usar preservativos:</strong> El uso consistente y correcto de preservativos durante todas las formas de contacto sexual es clave para reducir el riesgo de contraer clamidia.</li>
+          <li><strong>Hacerse pruebas regularmente:</strong> Las personas sexualmente activas, especialmente aquellas con múltiples parejas, deben hacerse pruebas de ITS, incluyendo la clamidia, de manera regular.</li>
+          <li><strong>Monogamia mutua:</strong> Tener una relación sexual monógama con una pareja que haya sido examinada y esté libre de ITS puede reducir el riesgo de infección.</li>
+        </ul>
+      </section>
+      <section id="tratamiento" class="container bg-secondary text-white p-5" style="border-radius: 15px">
+        <h2>Tratamiento</h2>
+        <p>La clamidia se puede tratar y curar con antibióticos. Es importante que tanto la persona infectada como sus parejas sexuales reciban tratamiento para evitar la reinfección. Además, se debe evitar cualquier actividad sexual durante el tratamiento hasta que se confirme la eliminación de la infección.</p>
+        <p>Si no se trata, la clamidia puede causar complicaciones graves, como la enfermedad inflamatoria pélvica (EIP) en mujeres, lo que puede llevar a infertilidad o embarazo ectópico. En los hombres, puede causar epididimitis, una inflamación dolorosa de los testículos que puede afectar la fertilidad.</p>
+      </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 Mi Sitio. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
