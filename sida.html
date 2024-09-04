@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre el SIDA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function navigateSection(event) {
+        event.preventDefault();
+        const target = event.target.getAttribute('href');
+        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+        window.history.replaceState(null, null, window.location.href.split('#')[0] + target);
+      }
+    </script>
+  </head>
+  <body>
+    <header class="container-fluid bg-info fixed-top text-center py-3">
+      <nav>
+        <a href="index.html" type="button" class="btn btn-primary">Home</a>
+        <a href="#que_es" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">¿Qué es?</a>
+        <a href="#sintomas" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Síntomas</a>
+        <a href="#transmision" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Transmisión</a>
+        <a href="#prevencion" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Prevención</a>
+        <a href="#tratamiento" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Tratamiento</a>
+      </nav>
+    </header>
+    <main>
+      <section id="que_es" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>¿Qué es?</h2>
+        <p>El SIDA (Síndrome de Inmunodeficiencia Adquirida) es la fase más avanzada de la infección por el VIH (Virus de la Inmunodeficiencia Humana). Ocurre cuando el sistema inmunológico ha sido gravemente dañado por el VIH, lo que deja al cuerpo vulnerable a infecciones y ciertos tipos de cáncer que rara vez afectan a personas con un sistema inmunológico saludable.</p>
+      </section>
+      <section id="sintomas" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Síntomas</h2>
+        <p>Los síntomas del SIDA pueden variar, pero a menudo incluyen:</p>
+        <ul>
+          <li><strong>Pérdida de peso rápida e inexplicable:</strong> Las personas con SIDA pueden perder peso rápidamente, incluso si comen adecuadamente.</li>
+          <li><strong>Fiebre recurrente o sudores nocturnos profusos:</strong> Fiebre alta y sudores nocturnos que pueden durar semanas o más.</li>
+          <li><strong>Fatiga extrema e inexplicable:</strong> Cansancio persistente que no mejora con el descanso.</li>
+          <li><strong>Ganglios linfáticos inflamados:</strong> Inflamación de los ganglios linfáticos en el cuello, las axilas o la ingle.</li>
+          <li><strong>Manchas en la piel o en el interior de la boca:</strong> Manchas inusuales de color rojo, marrón, rosado o púrpura que aparecen en la piel o en el interior de la boca.</li>
+          <li><strong>Diarrea crónica:</strong> Diarrea persistente que dura más de una semana.</li>
+          <li><strong>Infecciones oportunistas:</strong> Infecciones graves o recurrentes que son inusuales en personas con un sistema inmunológico saludable, como neumonía, tuberculosis o infecciones fúngicas.</li>
+        </ul>
+      </section>
+      <section id="transmision" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Transmisión</h2>
+        <p>El VIH, que causa el SIDA, se transmite a través de:</p>
+        <ul>
+          <li><strong>Relaciones sexuales sin protección:</strong> El VIH puede transmitirse a través del contacto con fluidos corporales infectados, como sangre, semen, fluidos vaginales y leche materna, durante el sexo vaginal, anal u oral sin protección.</li>
+          <li><strong>Compartir agujas:</strong> Compartir agujas o jeringas contaminadas con sangre infectada es una vía común de transmisión, especialmente entre personas que se inyectan drogas.</li>
+          <li><strong>Transmisión de madre a hijo:</strong> Una madre infectada puede transmitir el VIH a su bebé durante el embarazo, el parto o la lactancia.</li>
+          <li><strong>Transfusiones de sangre contaminada:</strong> Aunque es raro en muchos países debido a las estrictas pruebas de sangre, el VIH puede transmitirse a través de transfusiones de sangre contaminada.</li>
+        </ul>
+      </section>
+      <section id="prevencion" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Prevención</h2>
+        <p>Las formas más efectivas de prevenir la transmisión del VIH incluyen:</p>
+        <ul>
+          <li><strong>Uso de preservativos:</strong> Utilizar preservativos de manera correcta durante las relaciones sexuales para reducir el riesgo de transmisión del VIH.</li>
+          <li><strong>Pruebas regulares:</strong> Hacerse pruebas de VIH regularmente, especialmente si se tiene un mayor riesgo de infección.</li>
+          <li><strong>PrEP (profilaxis previa a la exposición):</strong> Tomar medicamentos preventivos si se tiene un alto riesgo de contraer VIH.</li>
+          <li><strong>Uso de agujas limpias:</strong> Nunca compartir agujas o jeringas. Usar siempre agujas limpias para evitar la transmisión del VIH.</li>
+          <li><strong>Tratamiento del VIH:</strong> Las personas con VIH deben tomar medicamentos antirretrovirales para reducir su carga viral y disminuir el riesgo de transmitir el virus a otros.</li>
+        </ul>
+      </section>
+      <section id="tratamiento" class="container bg-secondary text-white p-5" style="border-radius: 15px">
+        <h2>Tratamiento</h2>
+        <p>El tratamiento del VIH,
