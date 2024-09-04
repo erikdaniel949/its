@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre HPV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function navigateSection(event) {
+        event.preventDefault();
+        const target = event.target.getAttribute('href');
+        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+        // Reemplaza el estado actual para evitar añadir una entrada en el historial
+        window.history.replaceState(null, null, window.location.href.split('#')[0] + target);
+      }
+    </script>
+  </head>
+  <body>
+    <header class="container-fluid bg-info fixed-top text-center py-3">
+      <nav>
+        <a href="index.html" type="button" class="btn btn-primary">Home</a>
+        <a href="#que_es" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">¿Qué es?</a>
+        <a href="#sintomas" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Síntomas</a>
+        <a href="#transmision" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Transmisión</a>
+        <a href="#prevencion" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Prevención</a>
+        <a href="#tratamiento" type="button" class="btn btn-info border-0 border-bottom border-primary" onclick="navigateSection(event)">Tratamiento</a>
+      </nav>
+    </header>
+    <main>
+      <section id="que_es" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>¿Qué es?</h2>
+        <p>El virus del papiloma humano (HPV) es una de las infecciones de transmisión sexual más comunes. Existen más de 100 tipos de HPV, algunos de los cuales pueden causar verrugas genitales, mientras que otros están asociados con un mayor riesgo de desarrollar cánceres, como el cáncer de cuello uterino, anal, de garganta y otros.</p>
+      </section>
+      <section id="sintomas" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Síntomas</h2>
+        <p>La mayoría de las personas infectadas con HPV no presentan síntomas y la infección puede desaparecer por sí sola. Sin embargo, cuando hay síntomas, estos pueden incluir:</p>
+        <ul>
+          <li><strong>Verrugas genitales:</strong> Pequeñas protuberancias o grupos de protuberancias en la zona genital, que pueden ser planas, abultadas, o tener forma de coliflor.</li>
+          <li><strong>Lesiones precancerosas:</strong> El HPV puede causar cambios en las células del cuello uterino y otras áreas, que pueden ser detectados mediante pruebas de Papanicolaou (Pap) y pruebas de HPV.</li>
+          <li><strong>Asociación con cáncer:</strong> Algunos tipos de HPV pueden llevar al desarrollo de cáncer de cuello uterino, así como otros tipos de cáncer en áreas como el ano, la garganta, y los genitales.</li>
+        </ul>
+      </section>
+      <section id="transmision" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Transmisión</h2>
+        <p>El HPV se transmite principalmente a través del contacto sexual vaginal, anal u oral con una persona infectada. Es posible contraer el virus incluso si la persona infectada no presenta síntomas visibles. El HPV también puede transmitirse mediante contacto piel a piel en las áreas genitales.</p>
+      </section>
+      <section id="prevencion" class="container bg-secondary text-white p-5 mb-3" style="border-radius: 15px">
+        <h2>Prevención</h2>
+        <p>Existen varias maneras de reducir el riesgo de contraer o transmitir el HPV:</p>
+        <ul>
+          <li><strong>Vacunación:</strong> La vacuna contra el HPV es altamente efectiva para proteger contra los tipos de HPV que causan la mayoría de los cánceres de cuello uterino, verrugas genitales, y otros cánceres relacionados. Se recomienda para adolescentes, pero también puede administrarse a adultos jóvenes.</li>
+          <li><strong>Uso de preservativos:</strong> Aunque no eliminan completamente el riesgo, los preservativos pueden reducir significativamente la probabilidad de transmisión del HPV.</li>
+          <li><strong>Exámenes regulares:</strong> Las mujeres deben hacerse exámenes de Papanicolaou y pruebas de HPV regularmente para detectar cambios celulares precancerosos en el cuello uterino.</li>
+          <li><strong>Relaciones monógamas:</strong> Tener relaciones sexuales con una pareja que haya sido examinada y esté libre de HPV puede reducir el riesgo de infección.</li>
+        </ul>
+      </section>
+      <section id="tratamiento" class="container bg-secondary text-white p-5" style="border-radius: 15px">
+        <h2>Tratamiento</h2>
+        <p>No existe una cura para el HPV, pero muchas infecciones por HPV desaparecen por sí solas. El tratamiento se enfoca en los problemas de salud que pueden ser causados por el virus:</p>
+        <ul>
+          <li><strong>Verrugas genitales:</strong> Las verrugas causadas por HPV pueden ser tratadas con medicamentos tópicos o eliminadas mediante procedimientos médicos.</li>
+          <li><strong>Lesiones precancerosas:</strong> Las células anormales detectadas en el cuello uterino pueden ser tratadas para prevenir el desarrollo de cáncer.</li>
+          <li><strong>Cánceres relacionados con el HPV:</strong> Los cánceres asociados con el HPV requieren tratamiento específico, como cirugía, radioterapia, o quimioterapia, según el caso.</li>
+        </ul>
+        <p>Es importante realizar un seguimiento médico regular para monitorear y tratar cualquier complicación relacionada con el HPV.</p>
+      </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 Mi Sitio. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
