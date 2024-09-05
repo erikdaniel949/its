@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infecciones de Transmisión Sexual</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <div class="jumbotron jumbotron-fluid bg-info text-white py-5">
@@ -91,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-in">
                 <div class="card">
                     <img src="https://imgs.search.brave.com/BeJglm7XgfPW5294aRrtNrdqbE_ijs7XvD-kk_8hQ3o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODYw/NTk4ODA4L2VzL2Zv/dG8vaGVwYXRpdGlz/LWItcG9zaXRpdmEu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PS10T2pPa0pTSkcx/NjJFV21NN2FLaTRM/Um0tT0k1c0dCMXBj/ckFuMm0zdXc9" class="card-img-top" alt="Imagen 3" style="height: 12rem; object-fit: cover;">
                     <div class="card-body">
@@ -106,10 +107,12 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Mi Sitio. Todos los derechos reservados.</p>
     </footer>
-<!-- Esto no es necesario creo
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
--->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 </html>
