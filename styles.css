@@ -15,11 +15,4 @@ section{
   scroll-margin-top: 70px;
 }
 
-.star {
-  font-size: 40px; 
-  cursor: pointer;
-  color: lightgray;
-  margin-right: -5px;
-}
-
 AOS.init();
