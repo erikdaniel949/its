@@ -107,6 +107,16 @@
     </div>
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 . Todos los derechos reservados.</p>
+        <div class="div_stars">
+            <div id="rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p id="feedback"></p>
+        </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -114,6 +124,33 @@
         AOS.init({
             duration: 1000,
             once: false
+        });
+        const stars = document.querySelectorAll('.star');
+        const feedback = document.getElementById('feedback');
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const value = star.getAttribute('data-value');
+
+                stars.forEach(s => s.style.color = 'lightgray');
+
+                for (let i = 0; i < value; i++) {
+                    stars[i].style.color = 'yellow';
+                }
+
+            
+                if (value == 1) {
+                    feedback.textContent = "No es útil";
+                } else if (value == 2) {
+                    feedback.textContent = "Poco útil";
+                } else if (value == 3) {
+                    feedback.textContent = "Útil";
+                } else if (value == 4) {
+                    feedback.textContent = "Muy útil";
+                } else if (value == 5) {
+                    feedback.textContent = "Excelente";
+                }
+            });
         });
     </script>
 </body>
